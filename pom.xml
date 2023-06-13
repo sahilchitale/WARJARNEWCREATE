@@ -16,7 +16,7 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
 	<blaze.version>7.8</blaze.version>
-	<clos.bom.version>1</clos.bom.version>
+	<clos.bom.version>2</clos.bom.version>
   </properties>
   
   <parent>
