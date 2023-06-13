@@ -1,0 +1,18 @@
+<jxb:bindings version="1.0"
+               xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+               xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <jxb:globalBindings collectionType="indexed" generateIsSetMethod="false" enableJavaNamingConventions="false">
+	<jxb:serializable uid="-6026937020915831338" />
+	 <jxb:javaType name="int" xmlType="xs:integer"/>
+	<jxb:javaType name="java.util.Date" xmlType="xs:date"
+	 printMethod="com.fico.kmbl.clos.model.jaxb.adapters.CustomTypes.marshalDate" 
+	 parseMethod="com.fico.kmbl.clos.model.jaxb.adapters.CustomTypes.unmarshalDate"/>
+     </jxb:globalBindings>
+  	 <!-- boolean to java.lang.Boolean, 
+	 decimal to Double, 
+	 duration to NdDuration(TBD), 
+	 integer to Integer, 
+	 String, 
+	 dateTime to com.blazesoft.objects.java.NdTimestamp, 
+	 Date to com.blazesoft.objects.java.NdDate-->
+</jxb:bindings>

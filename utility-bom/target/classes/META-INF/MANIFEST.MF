@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: PrachiNigam
+Build-Jdk: 16.0.1
+Implementation-Title: utility-bom
+Implementation-Version: 1.0-SNAPSHOT
+Implementation-Vendor-Id: com.fico.kmbl.clos.build
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-URL: http://www.example.com
+Created-By: Maven Integration for Eclipse
+
