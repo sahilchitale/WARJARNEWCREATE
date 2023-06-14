@@ -20,11 +20,11 @@ public class PayloadLogging {
 
 	Logger logger = LoggerFactory.getLogger(PayloadLogging.class);
 	
-	@Autowired
-	private BlazeRequestLoggingService blazeRequestLoggingService;
-	
-	@Autowired
-	private BlazeResponseLoggingService blazeResponseLoggingService;
+	/*
+	 * @Autowired private BlazeRequestLoggingService blazeRequestLoggingService;
+	 * 
+	 * @Autowired private BlazeResponseLoggingService blazeResponseLoggingService;
+	 */
 	
 	
 	public void insertPayLoad(Message request, String type) {
@@ -52,7 +52,7 @@ public class PayloadLogging {
 	    	blazeReqLogging.setRequestXml(xml);	
 	    	blazeReqLogging.setAsOnDateTime(new Timestamp(System.currentTimeMillis()));
 //	    	
-	    	blazeRequestLoggingService.createBlazeReqLogging(blazeReqLogging);
+	    	//blazeRequestLoggingService.createBlazeReqLogging(blazeReqLogging);
 	    }
 	    if(type.equals("Response")) {
 	    	
@@ -76,7 +76,7 @@ public class PayloadLogging {
 	    	blazeResLogging.setAsOnDateTime(new Timestamp(System.currentTimeMillis()));
 	    	
 	    	
-	    	blazeResponseLoggingService.createBlazeReqLogging(blazeResLogging);
+	    	//blazeResponseLoggingService.createBlazeReqLogging(blazeResLogging);
 	    }
 	}
 }
