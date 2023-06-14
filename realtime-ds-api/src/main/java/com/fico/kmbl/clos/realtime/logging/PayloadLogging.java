@@ -42,15 +42,17 @@ public class PayloadLogging {
 	    	
 	    	xml = PrettyPrintUtil.convertJavaToXml(request);
 	    	
-	    	BlazeReqLogging blazeReqLogging = new BlazeReqLogging();
-	    	blazeReqLogging.setTransactionId(transactionId);
-	    	blazeReqLogging.setSrcApplId(applicationId);
-	    	blazeReqLogging.setSourceAppCode(sourceAppCode);
-	    	blazeReqLogging.setRequestedCall(requestedCall);
-////	    	blazeReqLogging.setPortfolioName(portfolioName);
-////	    	blazeReqLogging.setBusinessUnitType(businessUnitType);
-	    	blazeReqLogging.setRequestXml(xml);	
-	    	blazeReqLogging.setAsOnDateTime(new Timestamp(System.currentTimeMillis()));
+			/*
+			 * BlazeReqLogging blazeReqLogging = new BlazeReqLogging();
+			 * blazeReqLogging.setTransactionId(transactionId);
+			 * blazeReqLogging.setSrcApplId(applicationId);
+			 * blazeReqLogging.setSourceAppCode(sourceAppCode);
+			 * blazeReqLogging.setRequestedCall(requestedCall); ////
+			 * blazeReqLogging.setPortfolioName(portfolioName); ////
+			 * blazeReqLogging.setBusinessUnitType(businessUnitType);
+			 * blazeReqLogging.setRequestXml(xml); blazeReqLogging.setAsOnDateTime(new
+			 * Timestamp(System.currentTimeMillis()));
+			 */
 //	    	
 	    	//blazeRequestLoggingService.createBlazeReqLogging(blazeReqLogging);
 	    }
@@ -62,18 +64,21 @@ public class PayloadLogging {
 	    	
 	    	xml = PrettyPrintUtil.convertJavaToXml(request);
 	    	
-	    	BlazeResLogging blazeResLogging = new BlazeResLogging();
-	    	blazeResLogging.setTransactionId(transactionId);
-	    	blazeResLogging.setSrcApplId(applicationId);
-	    	blazeResLogging.setSourceAppCode(sourceAppCode);
-	    	blazeResLogging.setRequestedCall(requestedCall);
-////	    	blazeResLogging.setDecisionPoint(decisionPoint);
-////	    	blazeResLogging.setPortfolioName(portfolioName);
-////	    	blazeResLogging.setBusinessUnitType(businessUnitType);
-////	    	blazeResLogging.setTotalTimeTaken(request.getInvocation().getTotalTimeTaken());
-////	    	blazeResLogging.setResponseStatus(request.getInvocation().getResponseStatus());
-	    	blazeResLogging.setResponseXml(xml);
-	    	blazeResLogging.setAsOnDateTime(new Timestamp(System.currentTimeMillis()));
+			/*
+			 * BlazeResLogging blazeResLogging = new BlazeResLogging();
+			 * blazeResLogging.setTransactionId(transactionId);
+			 * blazeResLogging.setSrcApplId(applicationId);
+			 * blazeResLogging.setSourceAppCode(sourceAppCode);
+			 * blazeResLogging.setRequestedCall(requestedCall); ////
+			 * blazeResLogging.setDecisionPoint(decisionPoint); ////
+			 * blazeResLogging.setPortfolioName(portfolioName); ////
+			 * blazeResLogging.setBusinessUnitType(businessUnitType); ////
+			 * blazeResLogging.setTotalTimeTaken(request.getInvocation().getTotalTimeTaken()
+			 * ); ////
+			 * blazeResLogging.setResponseStatus(request.getInvocation().getResponseStatus()
+			 * ); blazeResLogging.setResponseXml(xml); blazeResLogging.setAsOnDateTime(new
+			 * Timestamp(System.currentTimeMillis()));
+			 */
 	    	
 	    	
 	    	//blazeResponseLoggingService.createBlazeReqLogging(blazeResLogging);
