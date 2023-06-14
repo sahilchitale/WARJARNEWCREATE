@@ -48,9 +48,6 @@
         
         
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
-        <dependent-module archiveName="object-model-5.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/object-model/object-model">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
                                                                                         
         
         
